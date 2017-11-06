@@ -1,0 +1,9 @@
+<mat-card class="content">
+  <form [formGroup]="todoForm" (ngSubmit)=submitTodo()>
+    <mat-form-field class="example-full-width">
+      <input #newTodo matInput
+      placeholder="Add Something To Do" value="" formControlName="description">
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="newTodo.value === ''" type="submit">Add</button>
+  </form>
+</mat-card>

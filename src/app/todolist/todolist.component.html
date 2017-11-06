@@ -1,0 +1,9 @@
+
+<mat-card class="content">
+  <mat-card-title>Items Remaining: {{todoList.options.length - todoList.selectedOptions.selected.length}}</mat-card-title>
+  <mat-selection-list #todoList>
+      <mat-list-option *ngFor="let todo of todoService.observableList | async">
+        {{todo.description}}
+      </mat-list-option>
+  </mat-selection-list>
+</mat-card>
