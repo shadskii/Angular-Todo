@@ -20,7 +20,7 @@ export class TodoaddComponent  {
       });
   }
 
-  public submitTodo(form: any) {
+  public submitTodo() {
     this.todoService.add(new ToDo(this.todoForm.controls['description'].value));
     this.todoForm.controls['description'].setValue('');
   }
