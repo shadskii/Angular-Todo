@@ -8,7 +8,9 @@ import { TodoService } from '../todo.service';
 })
 export class TodolistComponent implements OnInit {
 
+todoService: TodoService;
   constructor(todoService:TodoService) {
+    this.todoService = todoService;
    }
 
   ngOnInit() {
