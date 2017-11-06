@@ -10,8 +10,6 @@ import { ToDo } from '../data-model';
 })
 export class TodoaddComponent  {
 
-  // @Input() todo: ToDo;
-
   todoForm: FormGroup;
 
   constructor(
