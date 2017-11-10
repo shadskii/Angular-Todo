@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxJS/Observable';
-import { BehaviorSubject } from 'rxJS/BehaviorSubject';
+import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { ToDo } from './data-model';
 
 @Injectable()
@@ -13,7 +13,7 @@ export class TodoService {
     return this._observableList;
   }
 
-  add(todo: ToDo){
+  add(todo: ToDo) {
     this._list.push(todo);
     this._observableList.next(this._list);
   }

@@ -8,16 +8,16 @@ import { ToDo } from '../data-model';
   templateUrl: './todoadd.component.html',
   styleUrls: ['./todoadd.component.css']
 })
-export class TodoaddComponent  {
+export class TodoaddComponent {
 
   todoForm: FormGroup;
 
   constructor(
-    @Inject(FormBuilder) fb:FormBuilder,
-    private todoService:TodoService) {
-      this.todoForm = fb.group({
-        description: ''
-      });
+    @Inject(FormBuilder) fb: FormBuilder,
+    private todoService: TodoService) {
+    this.todoForm = fb.group({
+      description: ''
+    });
   }
 
   public submitTodo() {
